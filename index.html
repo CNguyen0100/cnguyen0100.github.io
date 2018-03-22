@@ -1,4 +1,5 @@
 <!doctype html>
+<!--<html lang="en" ng-app="cuongApp">-->
 <html>
 <head>
     <title>Cuong HomePage</title>
@@ -10,15 +11,25 @@
             height: 350px;
         }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="public/application.js"></script>
+    <script src="public/navbar/controllers/navBarController.js"></script>
+
 </head>
-<body>
+<body ng-app = "cuongApp">
 <header>
-    <div class="navbar navbar-black bg-dark box-shadow">
+    <div class="navbar navbar-black bg-dark box-shadow" ng-controller="navController">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#">
                 <img src="public/img/logo.png" width="24" height="24">
             </a>
+            <div class="row">
+            <a class="btn btn-outline-secondary text-white" href="#/projects">Projects</a>
+            <a class="btn btn-outline-secondary text-white" href="#/profile">Profile</a>
             <a class="btn btn-outline-secondary text-white" href="https://github.com/CNguyen0100">GitHub</a>
+            </div>
         </div>
     </div>
 </header>
@@ -32,7 +43,7 @@
             </p>
         </div>
     </section>
-
+    <div class="jumbotron bg-primary" ng-view></div>
 </main>
 </body>
 </html>
