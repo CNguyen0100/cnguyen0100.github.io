@@ -4,7 +4,7 @@
 <head>
     <title>Cuong HomePage</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-
+    <!--<link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.min.css" >-->
     <style type="text/css">
         .introsection{
 
@@ -22,28 +22,26 @@
 <header>
     <div class="navbar navbar-black bg-dark box-shadow" ng-controller="navController">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="#">
-                <img src="public/img/logo.png" width="24" height="24">
-            </a>
-            <div class="row">
-            <a class="btn btn-outline-secondary text-white" href="#/projects">Projects</a>
-            <a class="btn btn-outline-secondary text-white" href="#/profile">Profile</a>
-            <a class="btn btn-outline-secondary text-white" href="https://github.com/CNguyen0100">GitHub</a>
+            <div class="py-2 row" href="#">
+                <img class="mr-3" src="public/img/logo.png" href="#/" width="24" height="24" >
+                <a class="text font-weight-bold text-light">Cuong Nguyen</a>
+
             </div>
+            <div class="col-md-auto">
+                <div class="row">
+                    <a class="btn btn-outline-secondary text-white" href="#!/projects">Projects</a>
+                    <a class="btn btn-outline-secondary text-white" href="#!/profile">Profile</a>
+                    <a class="btn btn-outline-secondary text-white" href="https://github.com/CNguyen0100">GitHub</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </header>
 <main role="main">
-    <section class="jumbotron text-center introsection bg-light">
-        <div class="container">
-            <h1 class="jumbotron-heading font-weight-light">Cuong Nguyen</h1>
-            <p class="lead text-muted">
-                Hi, I'm Cuong Nguyen. I'm a senior at UCF Orlando studying Computer Science.
+    <section class="jumbotron text-center introsection bg-light" ng-view>
 
-            </p>
-        </div>
     </section>
-    <div class="jumbotron bg-primary" ng-view></div>
 </main>
 </body>
 </html>
