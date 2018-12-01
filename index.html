@@ -1,51 +1,151 @@
-<!doctype html>
-<!--<html lang="en" ng-app="cuongApp">-->
 <html>
-<head>
-    <title>Cuong HomePage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <!--<link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.min.css" >-->
-    <link rel="stylesheet" href="public/css/main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<head>
+		<title>Cuong Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
-    <script src="public/application.js"></script>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Home Page</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Resume</a></li>
+								<li><a href="elements.html">Projects</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
 
-</head>
-<body ng-app = "cuongApp">
-    <header>
-        <div class="navbar navbar-black bg-dark box-shadow" ng-controller="navController">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <div class="py-2 col ">
-                    <img class="mr-3 ml-5" src="public/img/logo.png" href="#!/" width="24" height="24" >
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-coffee"></span></div>
+							<h2>Xin Chào // Hello World </h2>
+							<p>I'm Kevin Nguyen, a Software Enigneer from Orlando, Florida.</p>
+						</div>
+					</section>
 
+				<!-- Wrapper -->
+					<section id="wrapper">
 
-                </div>
-                <a class="inner name text-white" href="#!/">Cuong Nguyen</a>
-                <div class="col">
-                    <div class="row align-content-end float-right ">
-                        <a class="btn btn-outline-secondary text-white " href="#!/projects">Projects</a>
-                        <a class="btn btn-outline-secondary text-white" href="#!/profile">Profile</a>
-                        <a class="btn btn-outline-secondary text-white" href="https://github.com/CNguyen0100">GitHub</a>
-                    </div>
-                </div>
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/avatar.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">I want to make thing that make a difference</h2>
+										<p>I've always sought out opportunities and challenges that are meaning full to me. Although my professional path has taken many twists and turns, I've never stopped engaging my passion to help others and solve problems</p>
+										<p>As a software engineer, I enjoy using my obsessive attention to detail, my unequivocal love for making things and my result-driven work ethic to literally change the world. That's why I'm excited to make a big impact at a high growth company</p>
+										<a href="https://www.dropbox.com/s/o50eng97chikvvh/Cuong%20Nguyen%20-%20Website.pdf?dl=0" class="special">My Resume</a>
+									</div>
+								</div>
+							</section>
 
-            </div>
-        </div>
-    </header>
-    <main role="main">
-        <section class="jumbotron introsection bg-light" >
-            <div ng-view></div>
-        </section>
-    </main>
-    <script src="public/navbar/controllers/navBarController.js"></script>
-    <script src="public/navbar/controllers/projectsController.js"></script>
-</body>
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/ucf.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Bachelor of Computer Science<br>Univerity of Central Florida<br>(2015-2018)</h2>
+										<p>I graduated from UCF with my bachelor's in 2018.This is a biggest reality checks in my life.<br>I believe that my 3.83 GPA in University doesn't tell much about my true abilities. I also don't think 4 years in Univerity is long enough for me to learn.</p>
+										<p>Graduation is not a finish line but a starting point of larger and longer learning, <b>not only learn to program, but also learn to make a difference</b></p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
 
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/tenosar.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Tenosar Corporation (April 2018 - Present) </h2>
+										<p>In last 8 months, I've had the opportunity to wear multiple hats, which has allowed me to step outside my programmer's bubble and into experiences I never would have sought out on my own. I have been able to expand my skill set through those experiences what I had here, and gain a better understanding of our business as a whole. </p>
+										<a href="https://tenosar.com/" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Projects</h2>
+									<p>This is projects that I have done in past 4 years.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">Virtual Reality Condition Assessment Training Application</h3>
+											<p>A Virtual Reality application where the trainee will use an HTC VIVE and train to asset equipments on the utility.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">Sticker Shock – Fashion Apparel Trading Web App</h3>
+											<p>Sticker Shock is a marketplace for users looking to sell, trade, or buy new and gently new used clothing. Sticker Shock aims to expand on the idea of a marketplace like Goat to all clothing types.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3 class="major">Hack Packs</h3>
+											<p>An Collection of generic Java Code that I wrote and collect to use in problem solving competition. It coves most of topic that usually appear in a programming contest such as graph, geometry, dynamic programming</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Personal Web V1</h3>
+											<p>An website which is written using AngularJS and HTML, CSS, and JavaScript. It contains all information and projects that I did.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch with me</h2>
+							<p>Thank you for looking at my webpage! Feel free to contact me.</p>
+							<ul class="contact">
+								<li class="fa-envelope"><a href="mailto:kevinnguyen0100@gmail.com">kevinnguyen0100@gmail.com</a></li>
+								<li class="fa-github"><a href="https://github.com/CNguyen0100">github.com/CNguyen0100</a></li>
+								<li class="fa-linkedin"><a href="https://www.linkedin.com/in/kevinnguyen-0/">linkedin.com/in/kevinnguyen-0</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
