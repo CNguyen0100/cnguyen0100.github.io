@@ -381,7 +381,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		.row.aln-left {
+		.row {
 			justify-content: flex-start;
 		}
 
@@ -2424,6 +2424,7 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
 
 		.image.main {
 			display: block;
